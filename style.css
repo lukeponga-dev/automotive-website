@@ -7,9 +7,10 @@
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color: #f8f8f8;
     color: #333;
     line-height: 1.6;
+    padding-top: 70px; /* Prevent content from hiding behind the fixed navbar */
 }
 
 /* Navigation Bar */
@@ -38,11 +39,6 @@ header {
     font-weight: bold;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-}
-
 .nav-links {
     list-style: none;
     display: flex;
@@ -61,194 +57,73 @@ nav {
     transition: 0.3s ease-in-out;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links .active {
     background-color: #0056b3;
     border-radius: 5px;
-}
-
-/* Mobile Menu */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.menu-toggle span {
-    width: 30px;
-    height: 3px;
-    background: white;
-    margin: 5px 0;
-}
-
-/* Responsive Navigation */
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        background: #222;
-        top: 60px;
-        right: 0;
-        width: 100%;
-        text-align: center;
-        padding: 20px 0;
-    }
-
-    .nav-links li {
-        margin: 15px 0;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-
-    /* Show menu when toggled */
-    .nav-active {
-        display: flex !important;
-    }
 }
 
 /* Hero Section */
 .hero {
-    background-color: #0056b3;
+    background: url('garage-background.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
-    padding: 60px 20px;
-    margin-top: 60px;
+    padding: 80px 20px;
 }
 
-/* Sections */
-.services, .about, .contact {
-    padding: 40px;
-    background-color: white;
-    text-align: center;
-    margin-top: 20px;
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
-.services h2, .about h2, .contact h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+.hero p {
+    font-size: 1.2em;
 }
 
-/* Footer */
-footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-}
-/* Booking Form */
-.booking {
-    background: #f8f8f8;
-    padding: 40px;
-    text-align: center;
-}
-
-.booking h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.booking p {
-    font-size: 1.1em;
-    margin-bottom: 20px;
-    color: #555;
-}
-
-form {
-    max-width: 500px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.form-group {
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-input, select {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background: #0056b3;
-    color: white;
-    border: none;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #003f80;
-}
-
-/* Confirmation Message */
-.confirmation-message {
-    margin-top: 20px;
-    padding: 15px;
-    background: #dff0d8;
-    color: #3c763d;
-    border: 1px solid #d6e9c6;
-    border-radius: 5px;
-    font-weight: bold;
-    }
 /* Services Section */
 .services {
-    background: #fff;
-    padding: 40px;
+    background: white;
+    padding: 60px 20px;
     text-align: center;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .services h2 {
-    font-size: 2em;
+    font-size: 2.2em;
     margin-bottom: 20px;
-    color: #333;
+    color: #222;
 }
 
 .services p {
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: #555;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .services-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
 }
 
 .service {
     background: #f4f4f4;
-    padding: 20px;
+    padding: 25px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 350px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin: auto;
 }
 
 .service h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    font-size: 1.6em;
+    margin-bottom: 15px;
     color: #0056b3;
 }
 
@@ -258,29 +133,41 @@ button:hover {
 }
 
 .service li {
-    padding: 8px;
+    padding: 10px;
     background: #e6e6e6;
     border-radius: 5px;
-    margin: 5px 0;
-    font-size: 1em;
+    margin: 8px 0;
+    font-size: 1.1em;
+    transition: background 0.3s;
+}
+
+.service li:hover {
+    background: #d1d1d1;
 }
 
 .service:hover {
     transform: translateY(-5px);
-    background: #e0e0e0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Booking Section */
 .booking {
     background: #0056b3;
     color: white;
-    padding: 40px;
+    padding: 50px 20px;
     text-align: center;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+
+.booking h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 .book-now-btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 12px 24px;
     background: white;
     color: #0056b3;
     font-size: 18px;
@@ -294,6 +181,16 @@ button:hover {
     background: #f4f4f4;
 }
 
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin-top: 40px;
+}
+
 /* Responsive Layout */
 @media screen and (max-width: 768px) {
     .services-container {
@@ -303,5 +200,17 @@ button:hover {
 
     .service {
         max-width: 90%;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
     }
 }
