@@ -210,3 +210,68 @@ button:hover {
     border-radius: 5px;
     font-weight: bold;
     }
+/* Services Section */
+.services {
+    background: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.service {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #0056b3;
+}
+
+.service p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.service ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service li {
+    padding: 8px;
+    background: #e6e6e6;
+    border-radius: 5px;
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+    background: #e0e0e0;
+}
+
+/* Responsive Grid */
+@media screen and (min-width: 768px) {
+    .services-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .service {
+        flex: 1;
+        margin: 0;
+    }
+}
