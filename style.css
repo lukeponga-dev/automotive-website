@@ -66,6 +66,7 @@ nav {
     border-radius: 5px;
 }
 
+
 /* Mobile Menu */
 .menu-toggle {
     display: none;
@@ -101,8 +102,12 @@ nav {
     .menu-toggle {
         display: flex;
     }
-}
 
+    /* Show menu when toggled */
+    .nav-active {
+        display: flex !important;
+    }
+}
 /* Show menu when toggled */
 .nav-active {
     display: flex !important;
