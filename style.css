@@ -138,3 +138,75 @@ footer {
     padding: 10px;
     width: 100%;
 }
+/* Booking Form */
+.booking {
+    background: #f8f8f8;
+    padding: 40px;
+    text-align: center;
+}
+
+.booking h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.booking p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #0056b3;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #003f80;
+}
+
+/* Confirmation Message */
+.confirmation-message {
+    margin-top: 20px;
+    padding: 15px;
+    background: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+    border-radius: 5px;
+    font-weight: bold;
+    }
