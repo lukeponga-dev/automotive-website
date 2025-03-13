@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Automotive Garage</title>
+    <title>Our Services - Automotive Garage</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,9 +14,10 @@
             <h1 class="logo">Our Automotive Garage</h1>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                 </ul>
                 <div class="menu-toggle">
                     <span></span>
@@ -26,31 +27,61 @@
             </nav>
         </div>
     </header>
-    <main>
-        <section id="services">
-            <h2>Our Services</h2>
-            
-            <h3>Servicing</h3>
-            <p>Vehicle servicing is an important requirement to keep your vehicle reliable and safe. For a quote, call us today!</p>
-            <ul>
-                <li>Engine Oil & Filter (Change engine oil & filter, visual check)</li>
-                <li>Engine Oil & Filter + Safety inspection (Inspect air filter, cabin filter, brakes, suspension, steering components, exhaust system, lighting system, drive train components, cooling system; notify any other areas of concern)</li>
-            </ul>
-        
-            <h3>Repairs</h3>
-            <p>Fix those faults before they become major. Let us know what car repairs you require, and we can give you a quote.</p>
-            <ul>
-                <li>Brake Pads & Rotors</li>
-                <li>Diagnostic Scan (Identify any faults; we can repair them for you)</li>
-                <li>CV Boot Replacement (Keep your CV joints contaminant-free by replacing ripped CV boots)</li>
-            </ul>
-        </section>
-        
-    
-    </main>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <p>We offer high-quality vehicle servicing and repairs to keep your car running smoothly and safely.</p>
+
+        <div class="services-container">
+            <!-- Servicing -->
+            <div class="service">
+                <h3>Servicing</h3>
+                <p>Regular maintenance ensures reliability and longevity for your vehicle.</p>
+                <ul>
+                    <li><strong>Engine Oil & Filter:</strong> Change engine oil & filter, visual check.</li>
+                    <li><strong>Safety Inspection:</strong> Inspect air filter, brakes, suspension, exhaust, and more.</li>
+                </ul>
+            </div>
+
+            <!-- Repairs -->
+            <div class="service">
+                <h3>Repairs</h3>
+                <p>Fix issues before they become costly. Get a quote today.</p>
+                <ul>
+                    <li><strong>Brake Pads & Rotors:</strong> Ensure your brakes are in top condition.</li>
+                    <li><strong>Diagnostic Scan:</strong> Identify issues and get fast repairs.</li>
+                    <li><strong>CV Boot Replacement:</strong> Prevent contaminants from damaging CV joints.</li>
+                </ul>
+            </div>
+
+            <!-- Additional Services -->
+            <div class="service">
+                <h3>Additional Services</h3>
+                <p>We provide specialized services to enhance performance and safety.</p>
+                <ul>
+                    <li><strong>Battery Replacement:</strong> High-quality batteries for all vehicles.</li>
+                    <li><strong>Wheel Alignment:</strong> Improve handling and tire lifespan.</li>
+                    <li><strong>Cooling System Repairs:</strong> Prevent engine overheating issues.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking">
+        <h2>Book a Service</h2>
+        <p>Schedule an appointment easily using our online booking form.</p>
+        <a href="index.html#booking" class="book-now-btn">Book Now</a>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>© 2024 Our Automotive Garage. All rights reserved.</p>
     </footer>
-</body>
 
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
 </html>
