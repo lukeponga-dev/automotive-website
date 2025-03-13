@@ -1,12 +1,11 @@
-
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(".menu-toggle");
     const navLinks = document.querySelector(".nav-links");
 
-    menuToggle.addEventListener("click", () => {
+    menuToggle.addEventListener("click", function () {
         navLinks.classList.toggle("nav-active");
     });
-
+});
     // Handle Booking Form Submission
     document.getElementById("bookingForm").addEventListener("submit", function (event) {
         event.preventDefault(); // Prevent actual form submission
