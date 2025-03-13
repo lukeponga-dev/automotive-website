@@ -3,58 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Automotive Garage</title>
+    <title>Our Automotive Garage</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Navigation Bar -->
     <header>
-        <h1>Welcome to Our Automotive Garage</h1>
-        <nav>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1 class="logo">Our Automotive Garage</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
     </header>
-    <main>
-         <section id="services">
-            <h2>Our Services</h2>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Welcome to Our Automotive Garage</h2>
+        <p>Your trusted partner for vehicle servicing and repairs.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+
+        <div class="service">
             <h3>Servicing</h3>
-            <p>Vehicle servicing is an important requirement to keep your vehicle reliable and safe. For a quote, call us today!</p>
+            <p>Vehicle servicing is an important requirement to keep your vehicle reliable and safe.</p>
             <ul>
                 <li>Engine Oil & Filter: Change engine oil & filter, visual check</li>
-                <li>Engine Oil & Filter + Safety inspection: Inspect air filter, cabin filter, brakes, suspension, steering components, exhaust system, lighting system, drive train components, cooling system; notify any other areas of concern</li>
+                <li>Engine Oil & Filter + Safety inspection: Inspect air filter, cabin filter, brakes, suspension, steering, exhaust, lights, drivetrain, and cooling system.</li>
             </ul>
+        </div>
+
+        <div class="service">
             <h3>Repairs</h3>
             <p>Fix those faults before they become major. Let us know what car repairs you require, and we can give you a quote.</p>
             <ul>
-                <li>Brake Pads & Rotors: Have new brake pads and rotors fitted for cars and SUVs</li>
-                <li>Diagnostic Scan: Identify any faults; we can repair them for you</li>
-                <li>CV Boot Replacement: Keep your CV joints contaminant-free by replacing ripped CV boots</li>
+                <li>Brake Pads & Rotors: Install new brake pads and rotors for cars and SUVs.</li>
+                <li>Diagnostic Scan: Identify faults and provide repairs.</li>
+                <li>CV Boot Replacement: Protect CV joints by replacing damaged boots.</li>
             </ul>
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Welcome to Our Automotive Garage, located at the heart of Hamilton on 137 Bankwood Road. With over 25 years of dedicated service to our community, we have become a cornerstone for vehicle care, offering comprehensive automotive solutions for all makes and models.</p>            <p>Our vision is to be the leading Automotive Workshop on the North Shore, offering a refreshing and professional approach to mechanical servicing. We are leaders in technology and staff training, striving to provide top levels of customer satisfaction and give back to our community and the automotive industry.</p>
-            <p>At Our Automotive Garage, we understand the importance of trust and transparency. That's why we offer upfront pricing, detailed explanations of all services, and a commitment to customer satisfaction. Our goal is to keep you informed and your vehicle safe on the road.</p>
-            <p>Whether you need a Warrant of Fitness, engine diagnostics, brake repairs, or air-conditioning services, you can count on us for reliable, professional, and affordable service. We also offer convenient amenities such as a free local shuttle service and courtesy cars to ensure your experience with us is as smooth as your drive.</p>
-            <p>Driven by passion and precision, Our Automotive Garage is your trusted partner for all your automotive needs. Visit us today and experience the difference quality service makes.</p>        </section>
-            <section id="contact">
-                <h2>Contact Us</h2>
-                <p>For all your vehicle needs, whether it's a routine check-up or a major repair, don't hesitate to get in touch with us. Our friendly team is ready to provide you with expert advice and quality service.</p>
-                <ul>
-                    <li>Phone: +64 7-123-4567</li>
-                    <li>Email: <a href="mailto:service@ourautomotivegarage.co.nz">service@ourautomotivegarage.co.nz</a></li>
-                    <li>Address: 137 Bankwood Road, Hamilton, New Zealand</li>
-                </ul>
-                <p>Our opening hours are Monday to Friday from 7:30 am to 5:00 pm. We're closed on weekends but available for emergency call-outs.</p>
-                <p>Feel free to drop by or schedule an appointment for a time that suits you. We look forward to keeping your vehicle running at its best!</p>
-            </section>
-            
-    </main>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Located in Hamilton at 137 Bankwood Road, we have served our community for over 25 years, offering high-quality vehicle repairs and servicing.</p>
+        <p>Our vision is to be the leading Automotive Workshop on the North Shore, providing a professional approach to mechanical servicing while using the latest technology.</p>
+        <p>We prioritize trust and transparency, offering upfront pricing, detailed service explanations, and a commitment to customer satisfaction.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Need a service or repair? Get in touch with us today.</p>
+        <p><strong>Phone:</strong> +64 7-123-4567</p>
+        <p><strong>Email:</strong> <a href="mailto:service@ourautomotivegarage.co.nz">service@ourautomotivegarage.co.nz</a></p>
+        <p><strong>Address:</strong> 137 Bankwood Road, Hamilton, New Zealand</p>
+        <p><strong>Opening Hours:</strong> Monday to Friday, 7:30 AM - 5:00 PM (Closed weekends, emergency call-outs available).</p>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>© 2024 Our Automotive Garage. All rights reserved.</p>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
 </body>
 </html>
