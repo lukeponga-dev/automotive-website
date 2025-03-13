@@ -1,8 +1,26 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #121212; /* Dark background for dark mode */
-    color: #ffffff; /* Light text for readability */
+    font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
 }
 
 nav ul {
@@ -15,53 +33,79 @@ nav ul li {
     margin-right: 20px;
 }
 
-/* Enhance the visual hierarchy of sections */
-section h2 {
-    color: #ffffff; /* Light text for dark mode */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.services {
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.service {
+    margin-bottom: 40px;
+}
+
+.service h3 {
+    font-size: 1.8em;
     margin-bottom: 10px;
 }
 
-/* Style the main content area */
-main {
-    padding: 20px;
-    background-color: #1e1e1e; /* Slightly lighter dark shade for contrast */
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Subtle shadow for depth */
+.service ul {
+    text-align: left;
+    list-style-type: none;
+    padding-left: 20px;
 }
 
-/* Improve the footer appearance */
-footer p {
-    color: #bbbbbb; /* Light grey text for dark mode */
+.service ul li {
+    margin-bottom: 8px;
+}
+
+.about, .contact {
+    padding: 40px;
+    background-color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.about h2, .contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
     text-align: center;
     padding: 10px 0;
-}
-
-/* Style the links for better visibility */
-a {
-    color: #64b5f6; /* Light blue color to stand out in dark mode */
-    text-decoration: none; /* No underline */
-}
-
-a:hover {
-    text-decoration: underline; /* Underline on hover for feedback */
-}
-
-/* Responsive design for the 'About Us' section */
-@media (max-width: 768px) {
-    section#about {
-        padding: 10px;
-        background-color: #2c2c2c; /* Dark grey background for differentiation */
-    }
-}
-
-/* Responsive design for the 'Contact Us' section */
-@media (max-width: 768px) {
-    section#contact {
-        padding: 10px;
-        background-color: #333333; /* Slightly darker grey for contrast */
-    }
-    
-    nav ul li {
-        display: block; /* Stack the navigation items vertically on small screens */
-        margin-right: 0; /* Remove margin for stacked items */
-    }
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
