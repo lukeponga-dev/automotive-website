@@ -1,3 +1,17 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
 /* Navigation Bar */
 header {
     background-color: #222;
@@ -52,7 +66,7 @@ nav {
     border-radius: 5px;
 }
 
-/* Responsive Navigation */
+/* Mobile Menu */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -66,7 +80,7 @@ nav {
     margin: 5px 0;
 }
 
-/* Mobile View */
+/* Responsive Navigation */
 @media screen and (max-width: 768px) {
     .nav-links {
         display: none;
@@ -92,4 +106,50 @@ nav {
 /* Show menu when toggled */
 .nav-active {
     display: flex !important;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 60px;
+}
+
+/* Services, About, and Contact Sections */
+.services, .about, .contact {
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.services h2, .about h2, .contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.service {
+    margin-bottom: 30px;
+}
+
+.service ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
