@@ -1,18 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(".menu-toggle");
     const navLinks = document.querySelector(".nav-links");
-    const navItems = document.querySelectorAll(".nav-links a");
 
-    // Toggle menu when clicking the menu button
     menuToggle.addEventListener("click", function () {
         navLinks.classList.toggle("nav-active");
-    });
-
-    // Close menu when a link is clicked (for better UX)
-    navItems.forEach(item => {
-        item.addEventListener("click", function () {
-            navLinks.classList.remove("nav-active");
-        });
     });
 });
     // Handle Booking Form Submission
